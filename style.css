@@ -1,0 +1,121 @@
+*,::after,::before{
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background:#9bbdef59;
+    margin: 0 auto;
+}
+h1{
+    color: #1b5cbb;font-weight: bolder;
+    font-size: 4rem;
+    padding: 1rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+.wrapper{
+     position: relative;
+     min-height: 40vh;
+     width: 40%;
+     margin: 0 auto;
+     padding-bottom: 1rem;
+     background: #85aeebd1;
+     color: whitesmoke;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+    border-radius: 10px;
+    box-shadow: 1px 1px 14px #1b5cbb;
+}
+.input-box{
+    margin-bottom: 1rem;
+}
+.input-box,.add-items{
+    position: relative;
+    width: 91%;
+    margin-top: 2rem;
+    background: #1b5cbb;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0 0 0 0.5rem;
+    border-radius: 4px;
+
+}
+input,.task-input{
+    width: 89%;
+    height: 3vw;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    position: relative;
+}
+input{
+    padding-left: 1rem;
+    caret-color: #1b5cbb;
+    font-size: 1.3rem;
+}
+input::placeholder{
+    color: rgb(167, 161, 161); padding-left: 0.4rem;    font-size: 1rem;
+}
+input:focus{
+    outline-color: #85aeebd1;
+}
+button{
+    width: 7%;
+    height: 6vw;
+    font-size: 1.9rem;
+    border: none;
+    border-radius: 5px;
+    background:transparent;
+    color:whitesmoke;
+    transition: all .3s linear;
+
+}
+.fa-trash-alt:hover,.fa-plus:hover{
+    color: #031b41;
+    cursor: pointer;
+}
+/* here we add new task */
+.add-items{
+    margin-top: 0;
+    background:transparent;  
+    min-height: auto;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    border-top: none;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    padding-left: 0;
+}
+.task-box{
+    display: flex;
+    width: 100%;
+    height: 7vh;
+    border-bottom: 2px solid #1b5cbb;
+    border-radius: 2px;
+    justify-content: space-evenly;
+    background: #dce7f9;
+    transition: all .3s ease-in;
+}
+.task-input{
+    color: #1b5cbb;
+    font-size: 1.4rem;
+    text-align: justify;
+    text-transform: capitalize;
+    margin-top: 1rem;
+    padding-left: 12px;
+}
+.deletebtn{
+    width: 10%;
+    height: 6vh;
+    color:#1b5cbb;
+    font-size: 21px;
+}
+.deletebtn:hover{
+    color:#020f22;
+}
+.done{
+    text-decoration:line-through;
+    color: black;
+}
