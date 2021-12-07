@@ -44,7 +44,7 @@ h1{
 input,.task-input{
     width: 89%;
     height: 3vw;
-    font-size: 1rem;
+    font-size: 14px;
     border: none;
     border-radius: 5px;
     position: relative;
@@ -71,7 +71,7 @@ button{
     transition: all .3s linear;
 
 }
-.fa-trash-alt:hover,.fa-plus:hover{
+.fa-trash-alt:hover,.fa-plus:hover,.fa-edit:hover{
     color: #031b41;
     cursor: pointer;
 }
@@ -100,19 +100,20 @@ button{
 }
 .task-input{
     color: #1b5cbb;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     text-align: justify;
     text-transform: capitalize;
     margin-top: 1rem;
     padding-left: 12px;
 }
-.deletebtn{
+.deletebtn,.editbtn{
     width: 10%;
     height: 6vh;
     color:#1b5cbb;
-    font-size: 21px;
+    font-size: 14px;
+    /* background: #020f22; */
 }
-.deletebtn:hover{
+.deletebtn:hover,.editbtn:hover{
     color:#020f22;
 }
 .done{
