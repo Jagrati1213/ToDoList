@@ -1,5 +1,6 @@
 *,::after,::before{
-    margin: 0;padding: 0;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 body{
@@ -7,11 +8,14 @@ body{
     margin: 0 auto;
 }
 h1{
-    color: #1b5cbb;font-weight: bolder;
-    font-size: 4rem;
-    padding: 1rem;
+    color: #1b5cbb;
+    font-weight: bolder;
+    /* font-size: 4rem;
+    padding: 1rem; */
     text-align: center;
     margin-top: 2rem;
+    font-size: 3rem;
+    padding: 2rem;
 }
 .wrapper{
      position: relative;
@@ -52,10 +56,12 @@ input,.task-input{
 input{
     padding-left: 1rem;
     caret-color: #1b5cbb;
-    font-size: 1.3rem;
+    font-size: 1rem;
 }
 input::placeholder{
-    color: rgb(167, 161, 161); padding-left: 0.4rem;    font-size: 1rem;
+    color: rgb(167, 161, 161); 
+    padding-left: 0.4rem;    
+    font-size: 1rem;
 }
 input:focus{
     outline-color: #85aeebd1;
@@ -75,7 +81,7 @@ button{
     color: #031b41;
     cursor: pointer;
 }
-/* here we add new task */
+/*========= here we add new task=========== */
 .add-items{
     margin-top: 0;
     background:transparent;  
@@ -119,4 +125,69 @@ button{
 .done{
     text-decoration:line-through;
     color: black;
+}
+
+/*============== media Queries=========== */
+/* for tablet view */
+@media only  screen and (max-width:768px){
+    h1{
+        font-size: 40px;
+        padding-bottom: 3rem;
+    }
+    .wrapper{
+        min-width: 85%;
+    }
+    .input-box{
+        padding: 1rem;
+    }
+    input{
+        font-size: 15px;
+        padding: 20px;
+    }
+    button{
+        font-size: 24px;
+    }
+    .task-input{
+        font-size: 17px;
+    }
+}
+
+/* for large phone */
+@media only screen and (max-width:450px) {
+    h1 {
+        font-size: 33px;
+        padding-bottom: 6rem;
+    }
+    .wrapper {
+        min-width: 94%;
+    }
+    input{
+        padding: 15px;
+        font-size: 11px;
+    }
+    input::placeholder{
+        font-size: 12px;
+    }
+    button{
+        font-size: 16px;
+    }
+    .task-input{
+        font-size: 12px;
+    }
+    .deletebtn,.editbtn{
+        font-size: 11px;
+    }
+}
+
+/* for small phone */
+@media only screen and (max-width:325px){
+    input::placeholder,input{
+        font-size: 10px;
+    }
+    .task-input{
+        font-size: 11px;
+    }
+    .deletebtn,.editbtn{
+        font-size: 10px;
+    }
 }
